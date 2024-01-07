@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #6D5BBA, #8D58BF, #FF6E7F, #FFB884);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    padding-top: 20vh;
+    animation: fadeIn 2s;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1em;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Existing CSS for body, h1, p, button, animations */
+
+/* Updated Navigation Bar CSS */
+nav {
+    background: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adding some shadow for depth */
+    font-size: 1.1em; /* Slightly larger font size */
+    position: fixed; /* Fixed at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures nav is above other content */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligns items in a row */
+    justify-content: center; /* Centers the menu items */
+    align-items: center; /* Vertical alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space out the menu items */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 20px 15px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #FFB884; /* Highlight color */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background on hover */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Rest of your CSS */
